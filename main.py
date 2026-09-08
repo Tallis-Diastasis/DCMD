@@ -11,7 +11,7 @@ class Client(discord.Client):
 		print(f"Logged on as {self.user}.")
 
 	async def on_message(self, message):
-		if message.author.name in ["DCMD", "cootshk"]: return
+		if message.author.name in [self.user.name, "cootshk"]: return
 		if str(message.channel.id) != getenv("CHANNEL_ID"): return
 		msg = message.content
 		if msg[0] == "$": return
