@@ -1,0 +1,6 @@
+discord.py
+os
+dotenv
+subprocess
+threading
+asyncio
